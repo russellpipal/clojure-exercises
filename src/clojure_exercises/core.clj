@@ -11,3 +11,7 @@
 ;; #15 Write a function which doubles a number
 (= ((fn [x] (* x 2)) 2) 4)
 ;;returns true. The function is (fn [x] (* x 2))
+
+;; #16 Write a function which returns a personalized greeting
+(= ((fn [x] (str "Hello, " x "!")) "Dave") "Hello, Dave!")
+;;returns true. Function is (fn [x] (str "Hello, " x "!"))
