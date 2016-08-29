@@ -19,3 +19,7 @@
 ;; #17 The map function takes two arguments: a function (f) and a sequence (s). Map returns a new sequence consisting of the result of applying f to each item of s. Do not confuse the map function with the map data structure.
 (= '(6 7 8) (map #(+ % 5) '(1 2 3)))
 ;;returns true. Maps the function (+ % 5) onto the list '(1 2 3)
+
+;; #18 The filter function takes two arguments: a predicate function (f) and a sequence (s). Filter returns a new sequence consisting of all the items of s for which (f item) returns true.
+(= '(6 7) (filter #(> % 5) '(3 4 5 6 7)))
+;;returns true. Pretty simple, just filters those in the list that are greater than 5.
