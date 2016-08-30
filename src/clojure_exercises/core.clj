@@ -40,3 +40,7 @@
 (= 4 (let [z 1 y 3 x 7] (+ y z)))
 (= 1 (let [z 1 y 3 x 7] z))
 ;;All return true.
+
+;; #37 Regular expressions (there seems to be different ways to order these problems)
+(= "ABC" (apply str (re-seq #"[A-Z]+" "bA1B3Ce ")))
+;; Seems pretty simple, just applies the regex to the string. This one is easy.
