@@ -26,6 +26,17 @@
 
 ;; #19 Local Bindings. Clojure lets you give local names to values using the special let-form.
 (= 7 (let [x 5] (+ 2 x)))
-(= 7 (let [x 3, y 10] (- y x)))
+(= 7 (let [x 3 y 10] (- y x)))
 (= 7 (let [x 21] (let [y 3] (/ x y))))
 ;; all return true. Let just seems to replace a variable in a local expression.
+
+;; #36 (next in order), Let it Be
+;;Can you bind x, y, and z so that these are all true?
+(= 10 (let __ (+ x y)))
+(= 4 (let __ (+ y z)))
+(= 1 (let __ z))
+;;Solve from z to x. Then z=1, y=3, x=7, so use the vector [z 1 y 3 x 7]
+(= 10 (let [z 1 y 3 x 7] (+ x y)))
+(= 4 (let [z 1 y 3 x 7] (+ y z)))
+(= 1 (let [z 1 y 3 x 7] z))
+;;All return true.
