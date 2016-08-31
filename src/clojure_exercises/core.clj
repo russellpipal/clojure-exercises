@@ -44,3 +44,10 @@
 ;; #37 Regular expressions (there seems to be different ways to order these problems)
 (= "ABC" (apply str (re-seq #"[A-Z]+" "bA1B3Ce ")))
 ;; Seems pretty simple, just applies the regex to the string. This one is easy.
+
+;; #64 Intro to Reduce
+;; Fill in the function:
+(= 15 (reduce + [1 2 3 4 5]))
+(=  0 (reduce + []))
+(=  6 (reduce + 1 [2 3]))
+;;all return true with the + function. Reduce looks like it'll be one of those Clojure things that takes some getting used to.
