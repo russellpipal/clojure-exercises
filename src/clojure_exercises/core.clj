@@ -53,3 +53,7 @@
 (=  0 (reduce + []))
 (=  6 (reduce + 1 [2 3]))
 ;;all return true with the + function. Reduce looks like it'll be one of those Clojure things that takes some getting used to.
+
+;;State fair today!
+(#(str "To the Fair!"))
+;;creates a function and immediately invokes it
