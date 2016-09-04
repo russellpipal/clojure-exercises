@@ -57,3 +57,6 @@
 ;;State fair today!
 (#(str "To the Fair!"))
 ;;creates a function and immediately invokes it
+
+;;State fair yesterday!
+(#(str "Too crowded!"))
