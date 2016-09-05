@@ -18,7 +18,7 @@
 (= ((fn [x] (str "Hello, " x "!")) "Dave") "Hello, Dave!")
 ;;returns true. Function is (fn [x] (str "Hello, " x "!"))
 (= (#(str "Hello, " % "!") "Dave") "Hello, Dave!")
-;;rewritten 
+;;rewritten
 
 
 ;; #17 The map function takes two arguments: a function (f) and a sequence (s). Map returns a new sequence consisting of the result of applying f to each item of s. Do not confuse the map function with the map data structure.
@@ -63,3 +63,7 @@
 
 ;;State fair yesterday!
 (#(str "Too crowded!"))
+
+;;Labor Day Update
+(defn labor-day [] (str "Happy Labor Day!"))
+(labor-day)
