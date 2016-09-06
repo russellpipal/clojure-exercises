@@ -65,5 +65,6 @@
 (#(str "Too crowded!"))
 
 ;;Labor Day Update
-(defn labor-day [] (str "Happy Labor Day!"))
+(def labor-day-greeting "Happy Labor Day!")
+(defn labor-day [] (str labor-day-greeting))
 (labor-day)
