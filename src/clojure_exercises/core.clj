@@ -68,3 +68,9 @@
 (def labor-day-greeting "Happy Labor Day!")
 (defn labor-day [] (str labor-day-greeting))
 (labor-day)
+
+;;Using filters
+(filter even? [1 2 3])
+;;returns (2)
+(filter even? '(1 2 3))
+;;also returns (2)
