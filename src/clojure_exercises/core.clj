@@ -74,3 +74,7 @@
 ;;returns (2)
 (filter even? '(1 2 3))
 ;;also returns (2)
+
+;;#57 Simple Recursion
+(= '(5 4 3 2 1) ((fn foo [x] (when (> x 0) (conj (foo (dec x)) x))) 5))
+;;returns true. (dec x) returns x-1.
