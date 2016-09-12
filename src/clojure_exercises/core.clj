@@ -91,3 +91,8 @@
 (= 3 (lasty '(5 4 3)))
 (= "d" (lasty ["b" "c" "d"]))
 ;;this way seems a bit less cheap
+
+;;#20 Penultimate element
+;;here's the function I used:
+#(nth % (dec (dec (count %))))
+;;It passed the tests.
