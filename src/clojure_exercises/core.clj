@@ -78,3 +78,9 @@
 ;;#57 Simple Recursion
 (= '(5 4 3 2 1) ((fn foo [x] (when (> x 0) (conj (foo (dec x)) x))) 5))
 ;;returns true. (dec x) returns x-1.
+
+;;#19 Return last element (without using the "last" function)
+(= ( #(first (reverse %)) [1 2 3 4 5]) 5)
+(= ( #(first (reverse %)) '(5 4 3)) 3)
+(= ( #(first (reverse %)) ["b" "c" "d"]) "d")
+;;I used #(first (reverse %))  Seems like cheating though.
