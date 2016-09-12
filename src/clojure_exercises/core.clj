@@ -84,3 +84,10 @@
 (= ( #(first (reverse %)) '(5 4 3)) 3)
 (= ( #(first (reverse %)) ["b" "c" "d"]) "d")
 ;;I used #(first (reverse %))  Seems like cheating though.
+
+(defn lasty [x]
+  (nth x (dec (count x))))
+(= 5 (lasty [1 2 3 4 5]))
+(= 3 (lasty '(5 4 3)))
+(= "d" (lasty ["b" "c" "d"]))
+;;this way seems a bit less cheap
