@@ -96,3 +96,22 @@
 ;;here's the function I used:
 #(nth % (dec (dec (count %))))
 ;;It passed the tests.
+#(second (reverse %))
+;;That one works too.
+
+;;#21 nth element
+; (= (__ '(4 5 6 7) 2) 6)
+;
+; (= (__ [:a :b :c] 0) :a)
+;
+; (= (__ [1 2 3 4] 1) 2)
+;
+; (= (__ '([1 2] [3 4] [5 6]) 2) [5 6])
+;
+; (fn [x n]
+;   (first ()))
+
+
+;;#24 Sum it all up.
+;;This is an easy sum function:
+#(apply + %)
