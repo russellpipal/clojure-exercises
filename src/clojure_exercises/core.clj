@@ -114,3 +114,6 @@
 ;;#24 Sum it all up.
 ;;This is an easy sum function:
 #(apply + %)
+
+;;Had a good conversation with my old mentor Matt--he said that most problems in Clojure can be solved with Filter, Reduce, And Map.
+;;That was eye-opening.
