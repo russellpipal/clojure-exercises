@@ -117,3 +117,5 @@
 
 ;;Had a good conversation with my old mentor Matt--he said that most problems in Clojure can be solved with Filter, Reduce, And Map.
 ;;That was eye-opening.
+
+;;Forgot to update yesterday. Feeling dumb.
