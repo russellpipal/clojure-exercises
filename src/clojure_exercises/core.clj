@@ -37,9 +37,9 @@
 
 ;; #36 (next in order), Let it Be
 ;;Can you bind x, y, and z so that these are all true?
-(= 10 (let __ (+ x y)))
-(= 4 (let __ (+ y z)))
-(= 1 (let __ z))
+; (= 10 (let __ (+ x y)))
+; (= 4 (let __ (+ y z)))
+; (= 1 (let __ z))
 ;;Solve from z to x. Then z=1, y=3, x=7, so use the vector [z 1 y 3 x 7]
 (= 10 (let [z 1 y 3 x 7] (+ x y)))
 (= 4 (let [z 1 y 3 x 7] (+ y z)))
